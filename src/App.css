@@ -1,0 +1,158 @@
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif; }
+
+/* GRID STYLES */
+.full-width {
+  box-sizing: border-box;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  width: 100vw; }
+
+.half-width {
+  float: left;
+  width: 48vw;
+  box-sizing: border-box; }
+
+.third-width {
+  float: left;
+  width: 33vw;
+  box-sizing: border-box; }
+
+/* HEADER STYLES */
+header {
+  background: linear-gradient(left, #7f3ae8, #343bff, #dd04ff);
+  background: -moz-linear-gradient(left, #7f3ae8, #343bff, #dd04ff);
+  background: -webkit-linear-gradient(left, #7f3ae8, #343bff, #dd04ff);
+  height: 100vh;
+  min-height: 650px;
+  overflow: hidden;
+  position: relative; }
+
+/* This is to display the image with transparency above the gradient */
+header:after {
+  background-attachment: fixed;
+  background-image: url("./img/DSCN1300@1x.jpg");
+  background-position: center;
+  background-size: cover;
+  content: ' ';
+  display: block;
+  height: 100vh;
+  left: 0;
+  min-height: 650px;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 0; }
+
+header h1 {
+  font-family: "Nova Square", sans-serif;
+  font-size: 36px;
+  color: #CB12F5;
+  margin: 0 30px;
+  line-height: normal;
+  padding: 0;
+  padding-top: 8px; }
+
+header h2 {
+  color: rgba(184, 236, 244, 0.76);
+  font-family: "Roboto Slab";
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 30px;
+  padding-top: 250px; }
+
+header h3 {
+  color: #fff;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  margin: 0 30px;
+  padding-top: 250px; }
+
+header .hero {
+  padding-right: 50px;
+  position: absolute;
+  text-align: right;
+  width: 44vw;
+  z-index: 10; }
+
+header #home-logo {
+  color: #CB12F5;
+  background-color: rgba(184, 236, 244, 0.76);
+  font-family: "Nova Square";
+  font-size: 34px; }
+
+header .scroll-icon {
+  text-align: center;
+  padding-top: 45vh; }
+
+/* NAVIGATION STYLES */
+.navbar {
+  background-color: rgba(184, 236, 244, 0.76);
+  display: block;
+  height: 62px;
+  position: absolute;
+  width: 100%;
+  z-index: 100; }
+
+.navbar a {
+  text-decoration: none; }
+
+.navbar a:hover {
+  color: #7f3ae8; }
+
+nav {
+  height: 50px;
+  width: auto;
+  z-index: 500; }
+
+nav ul {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  list-style-type: none;
+  padding-top: 6px;
+  text-transform: uppercase; }
+
+nav ul li a {
+  color: #312dff;
+  display: block;
+  float: left;
+  padding-left: 25px;
+  text-align: center;
+  text-decoration: none; }
+
+nav ul li a:visited {
+  color: #312dff; }
+
+nav ul li a:hover {
+  color: #CB12F5; }
+
+nav ul li a:last-child {
+  margin-right: 5px; }
